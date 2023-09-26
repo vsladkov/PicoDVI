@@ -137,7 +137,7 @@
 // Speed hack. The TMDS code uses both interpolators, for each of the 3 data
 // channels, so this define avoids 6 save/restores per scanline.
 #ifndef TMDS_FULLRES_NO_INTERP_SAVE
-#define TMDS_FULLRES_NO_INTERP_SAVE 0
+#define TMDS_FULLRES_NO_INTERP_SAVE 1
 #endif
 
 // If 1, don't DC-balance the output of full resolution encode. Hilariously
@@ -145,7 +145,7 @@
 // -- does not seem to mind (it helps that we DC-couple). Another speed hack,
 // useful when you are trying to get everything else up to speed.
 #ifndef TMDS_FULLRES_NO_DC_BALANCE
-#define TMDS_FULLRES_NO_DC_BALANCE 0
+#define TMDS_FULLRES_NO_DC_BALANCE 1
 #endif
 
 #endif
