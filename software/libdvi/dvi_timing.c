@@ -83,7 +83,7 @@ const struct dvi_timing __dvi_const(dvi_timing_800x600p_reduced_60hz) = {
 
 // Also known as qHD, bit uncommon, but it's a nice modest-resolution 16:9
 // aspect mode. Pixel clock 37.3 MHz
-const struct dvi_timing __dvi_const(dvi_timing_960x540p_60hz) = {
+const struct dvi_timing __dvi_const(dvi_timing_960x544p_60hz) = {
 	.h_sync_polarity   = true,
 	.h_front_porch     = 16,
 	.h_sync_width      = 32,
@@ -94,7 +94,7 @@ const struct dvi_timing __dvi_const(dvi_timing_960x540p_60hz) = {
 	.v_front_porch     = 2,
 	.v_sync_width      = 6,
 	.v_back_porch      = 15,
-	.v_active_lines    = 540,
+	.v_active_lines    = 544,
 
 	.bit_clk_khz       = 372000
 };
