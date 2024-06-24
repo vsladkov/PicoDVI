@@ -88,11 +88,27 @@ static const struct dvi_serialiser_cfg not_hdmi_featherwing_cfg = {
 	.invert_diffpairs = true
 };
 
-static const struct dvi_serialiser_cfg pico_neo6502_cfg = {
+static const struct dvi_serialiser_cfg olimex_neo6502_cfg = {
 	.pio = DVI_DEFAULT_PIO_INST,
 	.sm_tmds = {0, 1, 2},
 	.pins_tmds = {14, 18, 16},
 	.pins_clk = 12,
+	.invert_diffpairs = true
+};
+
+static const struct dvi_serialiser_cfg olimex_rp2040pc_cfg = {
+	.pio = DVI_DEFAULT_PIO_INST,
+	.sm_tmds = {0, 1, 2},
+	.pins_tmds = {14, 18, 16},
+	.pins_clk = 12,
+	.invert_diffpairs = true
+};
+
+static const struct dvi_serialiser_cfg pico_zero_cfg = {
+	.pio = DVI_DEFAULT_PIO_INST,
+	.sm_tmds = {0, 1, 2},
+	.pins_tmds = {28, 26, 14},
+	.pins_clk = 6,
 	.invert_diffpairs = true
 };
 
